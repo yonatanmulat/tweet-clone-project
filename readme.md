@@ -16,11 +16,8 @@ Have tried to keep the UI as similiar as that of Twitter. Is not mobile responsi
 Welcome login/signup page
 
 ![home page](Extra/Images/home_page_1.png)
-![home page](Extra/Images/home_page_2.png)
 Home page
 
-![user page](Extra/Images/user_page.png)
-User account page
 
 ## Database Schema
 
