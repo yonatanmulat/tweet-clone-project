@@ -1,4 +1,4 @@
-# Fullstack Twitter Clone
+#Twitter Clone project
 
 Made using the python framework Flask, this is a frontend + backend clone of twitter. Of course, it does not have ALL the functionalities Twitter has, but it can do the functions that are quintescential to Twitter, namely:
 
@@ -8,49 +8,8 @@ Made using the python framework Flask, this is a frontend + backend clone of twi
 4. Retweeting other perople's tweets.
 5. Looking up other users profile.
 
-## Screenshots
-
-Have tried to keep the UI as similiar as that of Twitter. Is not mobile responsive yet so is better to view it in landscape on laptop or desktop. The reason this hasn't been done yet is that this project's primary purpose was not to create a fronend site but rather create a fully functional generic social media website
-
-![login page](Extra/Images/login_page.png)
-Welcome login/signup page
-
-![home page](Extra/Images/home_page_1.png)
-Home page
 
 
-## Database Schema
-
-According to the current functionalities there are 5 tables in the schema. The User has all the info on the user, the Post links the creted posts to their author as:
-
-    User.id --> {author} --> Post.user_id
-
-The Retweets have a different table that the Posts as they point to instances within the Post themselves. Their connection is given as:
-
-    Post.id --> {ori_post} --> Retweet.tweet_id
-    User.id --> {retwitter} --> Retweet.user_id
-
-The Timelinr table keeps track of all the posts and the retweets that were created since day zero. Their relationship is given as:
-
-    Post.id --> {from_post} --> Timeline.post_id
-    Retweet.id --> {from_retweet} --> Timeline.retweet_id
-
-The Bookmark keeps track of all the posts that the user saves as a bookmark, Their relationship is given as :
-
-    Post.id --> {saved_post} --> Bookmark.post_id
-    User.id --> {saved_by} --> Bookmark.user_id
-
-__NOTE :__ This portion is yet to be implemented
-The Bookmark Table joins the User table with the Posts that the user saves. Relationship given as:
-
-    User.id --> {by_user} --> Bookmark.user_id
-    Post.id --> {saved_post} --> Bookmark.post_id
-
-The complete schema structure is given below:
-
-![Database Schema](Extra/Images/Twitter-Clone.png)
-
-__To Access the database in more detail, go [here](https://dbdiagram.io/d/5f7185f53a78976d7b757403)__
 
 ## Note
 
