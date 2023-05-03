@@ -68,12 +68,6 @@ __To Access the database in more detail, go [here](https://dbdiagram.io/d/5f7185
     3. Activate the virtual environment using - `./env/Scripts/activate`
     4. Return to the root directory and start the server running @localhost:5000 using - `python run.py`
 
-### Test User Credentials
-
-1. Username : JaneDoe
-2. Email : test@test.com
-3. Password : Admin123
-
 ## Things yet to do
 
 1. Add follow user/following functionality.
